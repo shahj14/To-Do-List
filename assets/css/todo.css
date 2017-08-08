@@ -10,7 +10,6 @@ body{
     margin: 100px auto;
     background: #f7f7f7;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
-    border: 3px solid transparent;
 }
 
 h1{
@@ -30,6 +29,7 @@ input{
     padding: 10px 10px 10px 20px;
     box-sizing: border-box;
     font-weight: 300;
+    border: 3px solid rgba(0,0,0,0);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
@@ -49,8 +49,8 @@ ul{
 li{
     background-color: white;
     height: 40px;
-    line-height: 40px;
     color: #666666;
+    line-height: 40px;
 }
 
 li:nth-child(2n){
@@ -74,15 +74,16 @@ li:hover span{
     float: right;
 }
 
-.delete{
-    background-color: #e74c3c;
-    height: 39px;
+span{
+    background: #E74C3C;
+    height: 28px;
     margin-right: 20px;
     text-align: center;
     color: white;
-    width: 0px;
+    width: 0;
     display: inline-block;
     transition: 0.2s linear;
     opacity: 0;
-    top: 10px;
+    position: inherit;
+    padding-top: 10px;
 }
