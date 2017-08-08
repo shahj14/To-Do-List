@@ -1,0 +1,14 @@
+#container{
+    width: 25%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+span{
+    color: red;
+}
+
+.completed{
+    color: grey;
+    text-decoration: line-through;
+}
