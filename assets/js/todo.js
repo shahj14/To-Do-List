@@ -15,6 +15,11 @@ $("ul").on("click",".delete", function(event){
 $("input").keypress(function(event){
     if(event.which === 13){
         var newToDo = $(this).val();
-        $("ul").append("<li><span class='delete'>X</span> " + newToDo + "</li>");
+        $("ul").append("<li><span class='delete fa fa-trash'></span> " + newToDo + "</li>");
+        $(this).val('');
     }
+});
+
+$(".fa-plus").click(function(){
+   $("input").fadeToggle();
 });
